@@ -26,7 +26,7 @@
 
 <body>
   <canvas id="canvas" width="720" height="800"></canvas>
-  <button onclick="gameManager.downBalls()">공 내리기</button>
+  <button onclick="gameManager.downBalls()">Ball Droping</button>
 
   <script>
     function randomInt(...args) {
@@ -584,9 +584,9 @@
       }
 
       showScore(state) {
-        ctx.fillText(`현재 점수: ${state.level}`, 30, uiOffsetY / 2 + 7);
+        ctx.fillText(`Score: ${state.level}`, 30, uiOffsetY / 2 + 7);
         ctx.fillText(
-          `최고 점수: ${state.bestLevel}`,
+          `Top Score: ${state.bestLevel}`,
           width - 150,
           uiOffsetY / 2 + 7
         );
